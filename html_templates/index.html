@@ -1,35 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U Nás ve Vršovicích</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header>
-        <h1>U·Nás·ve·Vršovicích</h1>
+        <p class="nazev">U·Nás·ve·Vršovicích</h1>
         <nav>
-            <div class="nav-links">
                 <a href="#">Dnešní menu</a>
                 <a href="#">Stálá nabídka</a>
                 <a href="#">Catering</a>
                 <a href="#">Kontakt</a>
-            </div>
         </nav>
         <div class="cover-photo">
-            <img src="/assets/images/cover.jpg">
-            <svg></svg>
+            <!-- <img src="/assets/images/cover.jpg"> -->
+            <div class="logo-container"><svg></svg></div>
         </div>
     </header>
     <main>
+        <section id="about">
+                <div class="grid">
+                    <div class="grid-col-span-2">
+                        <div>
+                            <p class="above-heading">Vítejte u nás!</p>
+                            <h1>Jsme pekárna, kavárna i&nbsp;restaurace</h1>
+                            <p class="intro-text">Rodinný podnik, blabla, kdy jsme začali, česko-srbské, balbla, retro design, a tak dále, copywriting nějakej dobrej krátkej. Rodinný podnik, blabla, kdy jsme začali, česko-srbské, balbla, retro design, a tak dále, copywriting nějakej dobrej krátkej.</p>
+                        </div>
+                    </div>
+                    <div class="grid-col-span-1"><img src="/assets/images/interier.jpg"></div>
+                </div>
+        </section>
+        <section id="wha-twe-do">
+                <div class="grid">
+                <div class="grid-row-span-2">
+                    <div>
+                        <h2>Pečeme</h2>
+                        <p>Rozpékané polotovary u nás nemají co dělat. Kváskové chleby, slané i sladké pečivo – to vše máme vlastnoručně vyráběné a vždy čerstvé!</p>
+                    </div>
+                    <img src="/assets/images/pekarna.jpg">
+                </div>
+                <div class="grid-row-span-1">
+                    <div>
+                        <h2>Vaříme</h2>
+                        <p>V našem obědovém menu najdete poctivé polévky, českou kuchyni i srbské speciality.</p>
+                    </div>
+                    <img src="/assets/images/kava.jpg">
+                </div>
+                <div class="grid-row-span-2">
+                    <div>
+                        <h2>Milujeme kávu</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, ex fugiat consequatur perspiciatis sed exercitationem explicabo cupiditate totam neque deleniti?Naše kávová zrna pocházejí od předních italských značek. Musetti je silnější káva vhodná na ranní nakopnutí, Hausbrandt je jemnější a hodí se k odpolednímu zákusku.</p>
+                    </div>
+                    <img src="/assets/images/kava.jpg">
+                </div>
+                <div class="grid-row-span-1">
+                    <div>
+                        <h2>Děláme catering</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt autem molestiae veniam, quod iste!</p>
+                    </div>
+                    <img src="/assets/images/kava.jpg">
+                </div>
+            </div>
+        </section>
         <section id="dnesni-menu">
             <div class="dark-block">
-                <h3>Dnešní menu | 12. 12</h3>
+                <h2>Dnešní menu | 12. 12</h2>
                 <div class="3-columns">
                     <article class="column">
                         <p class="above-heading">28. pluku 29</p>
-                        <h4>Restaurace</h4>
+                        <h3>Restaurace</h3>
                         <div class="menu-list" id="menu-restaurace">
                             <div class="menu-row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
@@ -59,7 +101,7 @@
                     </article>
                     <article class="column">
                         <p class="above-heading">Vršovická 65</p>
-                        <h4>Bistro MŽP</h4>
+                        <h3>Bistro MŽP</h3>
                         <div class="menu-list" id="menu-restaurace">
                             <div class="menu-row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
@@ -94,36 +136,6 @@
                         <p>Nevybrali jste si? Možná vám zachutná naše</p>
                         <a class="buttonlike-dark" href="#">Stálá nabídka</a>
                     </article>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="grid">
-                <div class="grid-2-fields">
-                    <p class="above-heading">Vítejte u nás!</p>
-                    <h2>Jsme pekárna, kavárna i&nbsp;restaurace</h2>
-                    <p>Rodinný podnik, blabla, kdy jsme začali, česko-srbské, balbla, retro design, a tak dále, copywriting nějakej dobrej krátkej. Rodinný podnik, blabla, kdy jsme začali, česko-srbské, balbla, retro design, a tak dále, copywriting nějakej dobrej krátkej.</p>
-                </div>
-                <div class="grid-1-field">
-                    <img src="/assets/images/interier.jpg">
-                </div>
-                <div class="grid-1-field">
-                    <h3>Pečeme</h3>
-                    <p>Rozpékané polotovary u nás nemají co dělat. Kváskové chleby, slané i sladké pečivo – to vše máme vlastnoručně vyráběné a vždy čerstvé!</p>
-                    <img src="/assets/images/pekarna.jpg">
-                </div>
-                <div class="grid-1-field">
-                    <h3>Vaříme</h3>
-                    <p>V našem obědovém menu najdete poctivé polévky, českou kuchyni i srbské speciality.</p>
-                </div>
-                <div class="grid-1-field">
-                    <h3>Milujeme kávu</h3>
-                    <p>Naše kávová zrna pocházejí od předních italských značek. Musetti je silnější káva vhodná na ranní nakopnutí, Hausbrandt je jemnější a hodí se k odpolednímu zákusku.</p>
-                    <img src="/assets/images/kava.jpg">
-                </div>
-                <div class="grid-1-field">
-                    <h3>Děláme catering</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt autem molestiae veniam, quod iste!</p>
                 </div>
             </div>
         </section>

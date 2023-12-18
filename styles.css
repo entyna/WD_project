@@ -40,11 +40,8 @@ header {
 }
 
 .nazev {
-    text-align: center;
-    font-size: 9vw;
-    text-transform: uppercase;
-    line-height: 9vw;
-    padding-top: 0.6rem;
+
+    padding: 0.2rem 0.3rem;
     border-top: 0.2rem solid var(--dark-color);
     border-bottom: 0.5rem solid var(--dark-color);
 }
@@ -55,9 +52,9 @@ nav {
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    padding-top: 0.4rem;
+    font-size: clamp(1rem, 1vw + 0.7rem, 2rem);
+    /* line-height: 1.7rem; */
+    /* padding-top: 0.4rem; */
     position: sticky;
 
     & a {
@@ -78,17 +75,17 @@ nav {
     background-position: center;
     height: 100%;
 
-    .logo-container {
-        background-color: var(--light-color);
+    .logo {
+
         /* box-shadow: -1px -2px 2px var(--dark-color); */
-        height: 5vw;
-        width: 10vw;
+        /* height: 5vw; */
+        width: calc(7vw + 14rem);
         position: absolute;
         bottom: 0;
         left: 50%;
         z-index: 5;
-        transform: translate(-50%, 0);
-        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        transform: translate(-50%, 0%);
+        /* border: 1px solid red; */
     }
 
 

@@ -65,7 +65,7 @@ body {
 .cover {
     margin-top: 1rem;
     position: relative;
-    /* background-image: url("/images/cover.jpg"); */
+    background-image: url("/images/cover.jpg");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -96,7 +96,7 @@ nav {
     bottom: 0;
     background-color: var(--light-color);
     z-index: 50;
-    width: 100%;
+    /* width: 100%; */
     height: var(--nav-height);
 
     padding: 0.2rem var(--side-padding);

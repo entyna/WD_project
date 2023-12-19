@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;600;700&display=swap');
 :root {
     --dark-color: #493E3E;
     --light-color: #eee3d7;
@@ -7,7 +8,7 @@
 
     --nav-height: 3.5rem;
     --header-top-margin: 1rem;
-    --side-padding: 1rem;
+    --side-padding: .7rem;
 }
 
 * {
@@ -21,40 +22,32 @@ img {
 }
 
 body, button, input, textarea {
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: clamp(1rem, 1vw + .5rem, 1.5rem);
+    font-family: 'Work Sans', sans-serif;
     color: var(--dark-color);
 }
 
 body {
-    background-color: var(--light-color);
-    overflow-x: hidden;
-    
+    background-color: var(--light-color); 
     max-width: 1700px;
     margin: 0 auto;
 
     &.admin {
         background-color: var(--dark-color);
-        
     }
 }
 
-.main-header {
-    margin-top: var(--header-top-margin);
-    height: calc(100dvh - var(--nav-height) - var(--header-top-margin));
-    display: flex;
-    flex-direction: column;
-    padding: 0 var(--side-padding);
-
-}
-
-.minimal-header {
+.header {
     margin-top: var(--header-top-margin);
     padding: 0 var(--side-padding);
+
+    &.header--with-cover {
+        height: calc(100dvh - var(--nav-height) - var(--header-top-margin));
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .nazev {
-
     padding: 0.2rem 0.3rem;
     border-top: 0.2rem solid var(--dark-color);
     border-bottom: 0.5rem solid var(--dark-color);
@@ -65,15 +58,24 @@ body {
     }
 }
 
+/* .claim {
+    border-bottom: 0.2rem solid var(--dark-color);
+} */
+
 .cover {
     margin-top: 1rem;
     position: relative;
-    background-image: url("/images/cover.jpg");
+    /* background-image: url("/images/cover.jpg"); */
     background-size: cover;
     background-position: center;
     height: 100%;
-
+    /* border: 1px solid red; */
     flex-grow: 2;
+
+    .cover__image {
+        height: 100%;
+        object-fit: cover;
+    }
 
     .cover__logo {
 

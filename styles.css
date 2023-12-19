@@ -249,7 +249,7 @@ footer {
 }
 
 .logo-footer {
-    width: calc(7vw + 3rem);
+    width: 6rem;
 }
 
 .footer-opening-hours {
@@ -269,4 +269,36 @@ footer {
 }
 .address {
     font-weight: bold;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.buttonlike {
+    display: inline-block;
+    border-radius: 0.2rem;
+    background: var(--dark-color);
+    box-shadow: 0.25rem 0.25rem 0.5rem 0 var(--drop-shadow);
+    font-size: 1.15rem;
+    color: var(--light-color);
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.socky {
+    background-color: transparent;
+    width: 2.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.socky:not(:first-of-type) {
+    margin-left: 1rem;
 }

@@ -52,6 +52,34 @@ body {
     border-top: 0.2rem solid var(--dark-color);
     border-bottom: 0.5rem solid var(--dark-color);
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+    text-align: center;
+    
+    font-size: clamp(3.125rem, 6.993vw + 0.983rem, 9.375rem);
+    /* font-size: clamp(3.125rem, 7.861vw + 0.411rem, 7.5rem); */
+    text-transform: uppercase;
+    /* letter-spacing: calc(.1rem + .1vw); */
+
+    @media (min-width: 565px) {
+        flex-wrap: nowrap;
+        :last-child::before {
+            content: '·';
+        }
+        /* font-size: clamp(3.125rem, 12.903vw + -0.827rem, 5.625rem); */
+    }
+
+    /* @media (min-width: 1350px) {
+        flex-wrap: nowrap;
+        font-size: clamp(5rem, 16.129vw + 0.06rem, 8.125rem);
+    } */
+
+    
+
     &.nazev--admin {
         border-top: 0.2rem solid var(--light-color);
         border-bottom: 0.5rem solid var(--light-color);
@@ -92,21 +120,22 @@ body {
 }
 
 nav {
-    position: fixed;
-    bottom: 0;
+    position: sticky;
+    top: 0;
     background-color: var(--light-color);
+    /* color: var(--light-color); */
     z-index: 50;
-    /* width: 100%; */
+    width: 100%;
     height: var(--nav-height);
 
     padding: 0.2rem var(--side-padding);
-    /* border-top: 0.2rem solid var(--dark-color); */
+    border-bottom: 0.2rem solid var(--dark-color);
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
     font-size: clamp(1rem, 1vw + 0.7rem, 2rem);
     align-items: center;
-    box-shadow: 0px -1px 5px var(--dark-color);
+    /* box-shadow: 0px -1px 5px var(--dark-color); */
 
 }
 
@@ -117,6 +146,13 @@ nav {
     &:hover {
         text-decoration: underline;
     }
+}
+
+.pokus {
+    height: 2rem;
+    background-color: aqua;
+    position: sticky;
+    top: 5rem;
 }
 
 main {

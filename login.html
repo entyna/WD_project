@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="/styles.css">
+
+  <title>Přihlášení | U Nás ve Vršovicích</title>
+</head>
+<body class="admin">
+  <main>
+    <div class="center-inside">
+      <img src="/images/logo_light.svg">
+      <div class="login-panel">
+          <h1>Přihlášení</h1>
+          <div class="message message--error">
+            Zadané údaje nejsou správné. <span class="open-dialog link" data-dialog="forgotten-password">Zapomněli jste heslo</span>?
+          </div>
+          <div class="message message--success">
+            Akce se povedla!
+          </div>
+          <form name="login" action="login.html" method="post" class="panel-form" onsubmit="return validateForm('login')" novalidate>
+            <label for="email" class="input-label">Email</label>
+            <input type="email" name="email" id="email" class="input" required>
+            <label for="password" class="input-label">Heslo</label>
+            <input type="password" name="password" id="password" class="input" required>
+            <input type="submit" value="Přihlásit se" class="button">
+          </form>
+       </div>
+    </div>
+  </main>
+<dialog id="forgotten-password" class="dialog">
+  <div class="close-dialog-wrapper">
+    <span class="close-dialog">✕</span>
+  </div>
+  <form action="forgotten-password.html" method="post" class="panel-form panel-form--dialog">
+    <label for="reg-email" class="input-label">Registrační email</label>
+    <input type="email" name="email" id="reg-email" class="input" required>
+    <input type="submit" value="Obnovit zapomenuté heslo" class="button button--full button--dialog">
+  </form>
+</dialog>
+<script src="/script.js"></script>
+</body>
+</html>

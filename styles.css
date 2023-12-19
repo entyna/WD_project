@@ -7,8 +7,11 @@
     --hover-color: #696161;
 
     --nav-height: 3.5rem;
-    --header-top-margin: 1rem;
+    --nazev-top-margin: 1rem;
     --side-padding: .7rem;
+
+    --border-thin: clamp(.1rem, .17vw + .031rem, .25rem);
+    --border-thick: clamp(.25rem, .35vw + .062rem, .5rem);
 }
 
 * {
@@ -22,7 +25,7 @@ img {
 }
 
 body, button, input, textarea {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'adelle-sans', sans-serif;
     color: var(--dark-color);
 }
 
@@ -37,11 +40,11 @@ body {
 }
 
 .header {
-    margin-top: var(--header-top-margin);
+    /* margin-top: var(--header-top-margin); */
     padding: 0 var(--side-padding);
 
     &.header--with-cover {
-        height: calc(100dvh - var(--nav-height) - var(--header-top-margin));
+        height: calc(100dvh - var(--nav-height) - var(--nazev-top-margin));
         display: flex;
         flex-direction: column;
     }
@@ -49,8 +52,9 @@ body {
 
 .nazev {
     padding: 0.2rem 0.3rem;
-    border-top: 0.2rem solid var(--dark-color);
-    border-bottom: 0.5rem solid var(--dark-color);
+    margin-top: var(--nazev-top-margin);
+    border-top: var(--border-thin) solid var(--dark-color);
+    border-bottom: var(--border-thick) solid var(--dark-color);
 
     display: flex;
     flex-wrap: wrap;
@@ -59,26 +63,19 @@ body {
 
 
     text-align: center;
-    
+    font-family: classico-urw, sans-serif;
     font-size: clamp(3.125rem, 6.993vw + 0.983rem, 9.375rem);
-    /* font-size: clamp(3.125rem, 7.861vw + 0.411rem, 7.5rem); */
+    line-height: 1.15;
     text-transform: uppercase;
-    /* letter-spacing: calc(.1rem + .1vw); */
+    /* letter-spacing: 0.2rem; */
+    letter-spacing: clamp(0.2rem, 0.3vw + 0.012rem, 0.55rem);
 
-    @media (min-width: 565px) {
+    @media (min-width: 850px) {
         flex-wrap: nowrap;
         :last-child::before {
             content: '·';
         }
-        /* font-size: clamp(3.125rem, 12.903vw + -0.827rem, 5.625rem); */
     }
-
-    /* @media (min-width: 1350px) {
-        flex-wrap: nowrap;
-        font-size: clamp(5rem, 16.129vw + 0.06rem, 8.125rem);
-    } */
-
-    
 
     &.nazev--admin {
         border-top: 0.2rem solid var(--light-color);
@@ -129,13 +126,13 @@ nav {
     height: var(--nav-height);
 
     padding: 0.2rem var(--side-padding);
-    border-bottom: 0.2rem solid var(--dark-color);
+    border-bottom: var(--border-thin) solid var(--dark-color);
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
-    font-size: clamp(1rem, 1vw + 0.7rem, 2rem);
+    font-size: clamp(1rem, 0.129vw + 0.971rem, 1.125rem);
     align-items: center;
-    /* box-shadow: 0px -1px 5px var(--dark-color); */
+    box-shadow: 0px 1px 5px var(--dark-color);
 
 }
 
@@ -185,7 +182,7 @@ h2 {
     font-size: clamp(1.7rem, 0.5vw + 1rem, 2.5rem);
     text-transform: uppercase;
     /* border-top: 0.15rem solid var(--dark-color); */
-    border-bottom: 0.25rem solid var(--dark-color);
+    border-bottom: var(--border-thick) solid var(--dark-color);
     padding: 0.15rem 0;
     margin-bottom: 0.4rem;
 }

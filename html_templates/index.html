@@ -10,93 +10,95 @@
     <header>
         <img class="nazev" src="/assets/images/nazev.svg">
         <nav>
-                <a href="#">Dnešní menu</a>
-                <a href="#">Stálá nabídka</a>
-                <a href="#">Catering</a>
-                <a href="#">Kontakt</a>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Dnešní menu</a>
+                <a href="#" class="nav-link">Stálá nabídka</a>
+                <a href="#" class="nav-link">Catering</a>
+                <a href="#" class="nav-link">Kontakt</a>
+            </div>
         </nav>
-        <div class="cover-photo">
-            <img class="logo" src="/assets/images/logo_pulkruh.svg">
+        <div class="cover">
+            <img class="cover__logo" src="/assets/images/logo_pulkruh.svg">
         </div>
     </header>
     <main>
         <section id="about">
-                <div class="grid">
-                    <div class="grid-col-span-2">
+                <div class="grid-layout">
+                    <div class="grid-layout__col-span-2">
                         <div>
                             <p class="above-heading">Vítejte u nás!</p>
                             <h1>Jsme pekárna, kavárna i&nbsp;restaurace</h1>
                             <p class="intro-text">Rodinný podnik, blabla, kdy jsme začali, česko-srbské, balbla, retro design, a tak dále, copywriting nějakej dobrej krátkej. Rodinný podnik, blabla, kdy jsme začali, česko-srbské, balbla, retro design, a tak dále, copywriting nějakej dobrej krátkej.</p>
                         </div>
                     </div>
-                    <div class="grid-col-span-1"><img src="/assets/images/interier.jpg"></div>
+                    <!-- <div class="grid-col-span-1"><img src="/assets/images/interier.jpg"></div> -->
                 </div>
         </section>
         <section id="dnesni-menu">
-            <div class="dark-box">
-                <h2 class="on-dark">Dnešní menu | <span class="menu-datum">12. 12</span></h2>
-                <div class="flex-3-columns">
-                    <article class="column">
-                        <p class="above-heading small">28. pluku 29</p>
+            <div class="highlight-box">
+                <h2>Dnešní menu | <span class="menu-datum">12. 12</span></h2>
+                <div class="flex-layout">
+                    <article class="flex-layout__child">
+                        <p class="above-heading--small">28. pluku 29</p>
                         <h3>Restaurace</h3>
                         <div class="menu-list" id="menu-restaurace">
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
                         </div>
                     </article>
-                    <article class="column">
-                        <p class="above-heading small">Vršovická 65</p>
+                    <article class="flex-layout__child">
+                        <p class="above-heading--small">Vršovická 65</p>
                         <h3>Bistro MŽP</h3>
                         <div class="menu-list" id="menu-restaurace">
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
-                            <div class="menu-row">
+                            <div class="menu-list__row">
                                 <div class="menu-meal">Smažený květák s brkaší</div>
                                 <div class="menu-price">165 Kč</div>
                             </div>
                         </div>
                     </article>
-                    <article class="column">
+                    <article class="flex-layout__child">
                         <p>Přijímáme stravenkové karty Sodexo a&nbsp;e-Stravenka</p>
                         <img class="stravenky" src="/assets/images/estravenka.png">
                         <img class="stravenky" src="/assets/images/sodexo.png">
@@ -107,95 +109,98 @@
             </div>
         </section>
         <section id="what-we-do">
-                <div class="grid">
-                <div class="grid-row-span-2">
+                <div class="grid-layout">
+                <div class="grid-layout__row-span-2">
                     <div>
                         <h2>Pečeme</h2>
                         <p>Rozpékané polotovary u nás nemají co dělat. Kváskové chleby, slané i sladké pečivo – to vše máme vlastnoručně vyráběné a vždy čerstvé!</p>
                     </div>
-                    <img src="/assets/images/pekarna.jpg">
+                    <img class="grid-layout__img--illu" src="/assets/images/pekarna.jpg">
                 </div>
-                <div class="grid-row-span-1">
+                <div class="grid-layout__row-span-1">
                     <div>
                         <h2>Vaříme</h2>
                         <p>V našem obědovém menu najdete poctivé polévky, českou kuchyni i srbské speciality.</p>
                     </div>
-                    <img src="/assets/images/kava.jpg">
+                    <img class="grid-layout__img--illu" src="/assets/images/kava.jpg">
                 </div>
-                <div class="grid-row-span-1">
+                <div class="grid-layout__row-span-1">
                     <div>
                         <h2>Děláme catering</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt autem molestiae veniam, quod iste!</p>
                     </div>
-                    <img src="/assets/images/kava.jpg">
+                    <img class="grid-layout__img--illu" src="/assets/images/kava.jpg">
                     
                 </div>
-                <div class="grid-row-span-2">
+                <div class="grid-layout__row-span-2">
                     <div>
                         <h2>Milujeme kávu</h2>
                         <p>Naše kávová zrna pocházejí od předních italských značek. Musetti je silnější káva vhodná na ranní nakopnutí, Hausbrandt je jemnější a hodí se k odpolednímu zákusku.</p>
                     </div>
-                    <img src="/assets/images/kava.jpg">
+                    <img class="grid-layout__img--illu" src="/assets/images/kava.jpg">
                 </div>
                 
             </div>
         </section>
         <section id="aktuality">
-            <div class="dark-box">
-                <h2 class="on-dark">Aktuality</h2>
-                <div class="flex-3-columns" id="aktuality-container">
-                    <article class="aktualita">
+            <div class="highlight-box">
+                <h2>Aktuality</h2>
+                <div class="flex-layout" id="aktuality-container">
+                    <article class="flex-layout__child">
                         <h3>Otevřeli jsme nové bistro na MŽVP</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laboriosam nesciunt quae! Accusantium natus possimus animi ex ducimus voluptate alias?</p>
                     </article>
-                    <article class="aktualita">
+                    <article class="flex-layout__child">
                         <h3>Vánoční večírek</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laboriosam nesciunt quae! Accusantium natus possimus animi ex ducimus voluptate alias?</p>
                     </article>
-                    <article class="aktualita">
+                    <article class="flex-layout__child">
                         <h3>Hledáme brigádníka</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laboriosam nesciunt quae! Accusantium natus possimus animi ex ducimus voluptate alias?</p>
                     </article>
-                    <article class="aktualita">
+                    <article class="flex-layout__child">
                         <h3>Hledáme brigádníka</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laboriosam nesciunt quae! Accusantium natus possimus animi ex ducimus voluptate alias?</p>
                     </article>
                 </div>
             </div>
         </section>
-        <section id="instagram-feed">
-            <div class="3-column">
-                <img class="insta-img" src="/assets/images/insta1.jpg">
-                <img class="insta-img" src="/assets/images/insta2.jpeg">
-                <img class="insta-img" src="/assets/images/insta3.jpg">
+        <section class="dark-box" id="instagram-feed">
+            <div class="instagram-feed">
+                <div class="grid-layout">
+                    <img class="grid-layout__img--insta" src="/assets/images/insta1.jpg">
+                    <img class="grid-layout__img--insta" src="/assets/images/insta2.jpeg">
+                    <img class="grid-layout__img--insta" src="/assets/images/insta3.jpg">
+                </div>
+                <a class="buttonlike-dark" href="#">Stálá nabídka</a>
             </div>
-            <a class="buttonlike-dark" href="#">Stálá nabídka</a>
         </section>
     </main>
     <footer>
-        <h3>Kontakt</h3>
-        <div class="3-column">
-            <div class="column">
+        <h2>Kontakt</h2>
+        <div class="flex-layout">
+            <div class="footer-contact">
                 <img class="logo-footer" src="/assets/images/logo-footer.png">
                 <p>pekarnaunas@icloud.com</p>
                 <p>+420 737 065 338</p>
                 <a href="#" class="soc-link" id="instagram"><img src=""></a>
                 <a href="#" class="soc-link" id="facebook"><img src=""></a>
             </div>
-        </div>
-        <div class="column">
-            <p class="above-heading">28. pluku 29</p>
-            <h3>Restaurace a pekárna</h3>
-            <p>Restaurace | Po – Pá 11:00 – 22:00</p>
-            <p>Pekárna | Po – Pá 6:30 – 18:00</p>
-            <p class="above-heading">Vršovická 65</p>
-            <h3>Bistro MŽP</h3>
-            <p>Po – Pá 6:30 – 18:00</p>
-        </div>
-        <div class="column">
-            <div class="google map">
-
+            <div class="footer-opening-hours">
+                <p class="above-heading--small">Restaurace a pekárna</p>
+                <p class="address">28. pluku 29</p>
+                <p>Restaurace | Po – Pá 11:00 – 22:00</p>
+                <p>Pekárna | Po – Pá 6:30 – 18:00</p>
+                <p class="above-heading--small">Bistro MŽP</p>
+                <p class="address">Vršovická 65</p>
+                <p>Po – Pá 6:30 – 18:00</p>
             </div>
+            <div class="footer-map">
+                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d293.53376944898946!2d14.463662120526017!3d50.07118044885566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b93a7b1fcc975%3A0x43026fa2607f9a4a!2zVSBuw6FzIHZlIFZyxaFvdmljw61jaA!5e0!3m2!1scs!2scz!4v1702973553187!5m2!1scs!2scz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 U Nás ve Vršovicích
         </div>
     </footer>
 </body>

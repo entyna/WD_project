@@ -46,7 +46,7 @@ header {
     border-bottom: 0.5rem solid var(--dark-color);
 }
 
-nav {
+.nav-links {
     padding: 0.2rem 0;
     border-bottom: 0.2rem solid var(--dark-color);
     text-transform: uppercase;
@@ -57,7 +57,7 @@ nav {
     /* padding-top: 0.4rem; */
     position: sticky;
 
-    & a {
+    .nav-link {
         text-decoration: none;
         color: var(--dark-color);
 
@@ -67,7 +67,7 @@ nav {
     }
 }
 
-.cover-photo {
+.cover {
     margin-top: 1rem;
     position: relative;
     background-image: url("/assets/images/cover.jpg");
@@ -75,7 +75,7 @@ nav {
     background-position: center;
     height: 100%;
 
-    .logo {
+    .cover__logo {
 
         /* box-shadow: -1px -2px 2px var(--dark-color); */
         /* height: 5vw; */
@@ -87,21 +87,20 @@ nav {
         transform: translate(-50%, 0%);
         /* border: 1px solid red; */
     }
-
-
 }
 
 section {
-    margin: 3rem 0;
+    margin: 5rem 0;
 }
 
 .above-heading {
     font-size: clamp(1rem, 1vw + 0.7rem, 2rem);
     text-transform: uppercase;
+}
 
-    &.small {
-        font-size: clamp(1rem, 1vw + .5rem, 1.5rem);
-    }
+.above-heading--small {
+    font-size: clamp(1rem, 1vw + .5rem, 1.5rem);
+    text-transform: uppercase;
 }
 
 h1 {
@@ -113,18 +112,14 @@ h1 {
 h2 {
     font-size: clamp(1.7rem, 0.5vw + 1rem, 2.5rem);
     text-transform: uppercase;
-    border-top: 0.15rem solid var(--dark-color);
+    /* border-top: 0.15rem solid var(--dark-color); */
     border-bottom: 0.4rem solid var(--dark-color);
     padding: 0.15rem 0;
     margin-bottom: 0.4rem;
-
-    &.on-dark {
-        border-bottom: 0.3rem solid var(--light-color);
-        padding: 0.15rem 1rem;
-    }
 }
+
 h3 {
-    font-size: clamp(1.8rem, 0.5vw + 1.5rem, 2.7rem);
+    font-size: clamp(1.8rem, 0.5vw + 1.3rem, 2rem);
     margin-bottom: 0.4rem;
 }
 .intro-text {
@@ -132,15 +127,9 @@ h3 {
     max-width: 800px;
 }
 
-.grid {
+.grid-layout {
     display: grid;
     gap: 3rem;
-
-    & img {
-        margin-top: 1rem;
-        object-fit: cover;
-        aspect-ratio: 2 / 1;
-    }
 
     > * {
         display: flex;
@@ -155,28 +144,39 @@ h3 {
     @media (min-width: 50rem) {
         grid-template-columns: repeat(3, 1fr);
 
-        .grid-col-span-2 {
+        .grid-layout__col-span-2 {
             grid-column: span 2;
         }
-        .grid-row-span-2 {
+        .grid-layout__row-span-2 {
             grid-row-start: 1;
             grid-row-end: 3;
         }
-        .grid-row-span-1 img {
+        .grid-layout__row-span-1 .grid-layout__img--illu {
             width: 100%;
             aspect-ratio: 1.8 / 1;
         }
-        .grid-row-span-2 img {
+        .grid-layout__row-span-2 .grid-layout__img--illu {
             width: 100%;
             aspect-ratio: 1 / 1.3;
         }
     }
 }
 
-.flex-3-columns {
+.grid-layout__img--illu {
+    margin-top: 1rem;
+    object-fit: cover;
+    aspect-ratio: 2 / 1;
+}
+
+.grid-layout__img--insta {
+    aspect-ratio: 1;
+}
+
+.flex-layout {
     display: flex;
     gap: 2.5rem;
     flex-wrap: wrap;
+
     padding: 1rem 1rem 2rem 1rem;
 
     > * {
@@ -186,11 +186,12 @@ h3 {
 
 }
 
+
 .menu-list {
     > * {
         display: flex;
         justify-content: space-between;
-        border-bottom: 0.1rem solid var(--light-color);
+        border-bottom: 0.1rem solid var(--dark-color);
 
         :last-child {
             text-align: right;
@@ -203,9 +204,49 @@ h3 {
     margin-right: 1.5rem;
 }
 
-.dark-box {
-    background-color: var(--dark-color);
-    color: var(--light-color);
+.highlight-box {
+
+    border: 0.2rem solid var(--dark-color);
+
+    & h2 {
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        padding-left: 1rem;
+    }
 }
 
 
+
+footer {
+    border-top: 0.3rem double var(--dark-color);
+    /* background-color: var(--dark-color); */
+}
+
+.copyright {
+    border-top: 0.3rem double var(--dark-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.logo-footer {
+    width: calc(7vw + 3rem);
+}
+
+.footer-opening-hours {
+    .above-heading--small:not(:first-of-type) {
+        margin-top: 1.5rem;
+    }
+}
+
+.footer-map {
+
+}
+
+.google-map {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.address {
+    font-weight: bold;
+}
